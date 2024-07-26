@@ -1,8 +1,7 @@
-import hangman as hg
 import random
 import string
 
-WORDLIST_FILENAME = "D:\python\MIT assignments\hangman\words.txt"
+WORDLIST_FILENAME = ""
 
 
 def load_words():
@@ -12,16 +11,6 @@ def load_words():
     wordlist = line.split()
     print("  ", len(wordlist), "words loaded.")
     return wordlist
-
-
-def choose_word(wordlist):
-    """
-    wordlist (list): list of words (strings)
-
-    Returns a word from wordlist at random
-    """
-    return random.choice(wordlist)
-
 
 wordlist = load_words()
 
